@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useSelector } from "react-redux";
 
 function App() {
+  const { theme } = useSelector((state) => state.theme);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div data-theme={theme} className='w-full min-h-[100vh]'>
+      <div className="bg-ascent-1 w-full h-full">
+hellol
+      </div>
+      
     </div>
   );
 }

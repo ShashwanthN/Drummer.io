@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,42 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@layer base {
+  :root {
+    --color-bg: 218 224 230;
+    --color-bg2: 26 26 27;
+    --color-primary: 255 255 255;
+    --color-secondary: 255 255 255;
+    --color-ascent1: 241 106 31;
+    --color-ascent2: 8 0 37;
+    --color-ascent3: 254 253 248;
+    --color-ascent4: 94 130 143;
+
+
+    --color-grey: 210 210 210;
+    --color-placehold: 150 150 150;
+    --color-bgBorder: 244 243 232;
+
+  }
+
+
+  
+  /* //15 23 42  21 30 49*/
+  [data-theme="dark"] {
+     --color-bg: 0 0 0;
+     --color-bg2: 255 255 255;
+    --color-primary: 20 20 20;
+    --color-secondary: 26 26 27;
+    --color-ascent1: 241 106 32;
+    --color-ascent2: 164 161 162;
+    --color-ascent3: 20 20 20;
+    --color-ascent4: 94 130 143;
+    --color-blue: 6 90 216;
+    /* //16 176 255; */
+    --color-grey: 48 48 48;
+    --color-white: 26 26 27;
+    --color-bgBorder: 48 48 48;
+    
+  }
 }
