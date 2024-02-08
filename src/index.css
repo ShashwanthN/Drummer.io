@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,42 +16,20 @@ code {
     monospace;
 }
 
-
 .drumalign {
   text-align: center;
-  width: 80%;
   transition: all 0.5s ease-in-out;
-  
 }
-/* @media (max-width: 800px) {
+
+@media (max-width: 1100px) {
   .drumalign {
     transform: rotate(90deg);
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    
   }
-
-  
-  .drum {
-    width: calc(33% - 20px);
-    margin: 5px;
-   
-     
-  }
-} */
-
-
+}
 
 h1 {
   font-size: 5rem;
   color: #DBEDF3;
-
-}
-
-footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
 }
 
 .q {
@@ -83,40 +60,22 @@ footer {
 
 }
 
-.set {
-  margin: 0% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
 }
 
 .drum {
   outline: none;
-
   font-size: 5rem;
-  
   line-height: 2;
   font-weight: 900;
-  
   display: inline-block;
   width: 150px;
   height: 150px;
-  
-  margin: 30px;
+  margin: 5px; 
+/* Adjust as needed */
 }
-
-
 
 @layer base {
   :root {
@@ -128,17 +87,12 @@ footer {
     --color-ascent2: 247 43 2;
     --color-ascent3: 254 253 248;
     --color-ascent4: 94 130 143;
-
-
     --color-grey: 210 210 210;
     --color-placehold: 150 150 150;
     --color-bgBorder: 244 243 232;
-
   }
 
-
-  
-  /* //15 23 42  21 30 49*/
+  /* Dark theme styles */
   [data-theme="dark"] {
      --color-bg: 26 26 26;
      --color-bg2: 236 236 236;
@@ -149,10 +103,8 @@ footer {
     --color-ascent3: 20 20 20;
     --color-ascent4: 94 130 143;
     --color-blue: 6 90 216;
-    /* //16 176 255; */
     --color-grey: 48 48 48;
     --color-white: 26 26 27;
     --color-bgBorder: 48 48 48;
-    
   }
 }

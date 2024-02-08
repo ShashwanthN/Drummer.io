@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SetTheme } from './redux/theme';
 import { useDispatch, useSelector } from "react-redux";
-import { CiDark } from "react-icons/ci";
-import { CiLight } from "react-icons/ci";
-import drum from "./images/drum.png";
 import { TopBar } from './components';
 import kick from "./images/kick.png";
+import snare from "./images/snared.png";
+import tom from "./images/tom2.png";
+import bass from "./images/bass.png";
+import hat from "./images/hat.png";
+import drum from "./images/drum.png";
+import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 function App() {
   const { theme } = useSelector((state) => state.theme);
@@ -16,34 +19,77 @@ function App() {
   };
 
   return (
-    <div data-theme={theme} className='w-full min-h-[100vh] overflow-y-scroll'>
-      <TopBar/>
-      <div className="bg-bg w-full h-screen  justify-center items-center">
-        <div className='home w-full px-4 2xl:px-0 bg-bgColor h-full'>
-          <div className='w-full flex flex-row lg:flex-row justify-center pb-10 h-full'>
+    <div data-theme={theme} className='w-full min-h-screen overflow-hidden'>
+      <div className="bg-bg w-full h-screen justify-center items-center">
+        <TopBar />
+
+        {/* Drum Section */}
+        <div className='home w-full bg-bgColor h-screen overflow-hidden'>
+          <div className='w-full flex flex-row justify-center h-full'>
             {/* Left */}
-            <div className="text-bg2 flex flex-col justify-center items-center lg:items-start lg:w-1/4">
-              <button className="q p-3 items-center hover:shadow-lg drum">1</button>
-              <button className="w drum">
-  <img src={kick} alt="icon of kicking something"></img>
-</button>
-              <button className="e drum">3</button>
+            <div className="w-full h-full text-bg2 flex flex-col justify-center items-center lg:items-start lg:w-1/4">
+              <button className="q items-center hover:shadow-lg drum mb-4">
+                <img src={tom} alt="Tom Drum" />
+              </button>
+              <button className="w drum mb-4">
+                <img src={kick} alt="Kick Drum" />
+              </button>
+              <button className="e drum mb-4">
+                <img src={snare} alt="Snare Drum" />
+              </button>
             </div>
 
             {/* Center */}
-            <div className="pt-10 drumalign lg:w-2/4 flex justify-center items-center">
-              <img src={drum} alt="Drum roland click to drum online drumming website easy drum" />
+            <div className="drumalign lg:w-2/4 flex justify-center items-center">
+              <img src={drum} alt="Drum Set" className="hidden md:block" />
             </div>
 
             {/* Right */}
             <div className="text-bg2 flex flex-col justify-center items-center lg:items-end lg:w-1/4">
-              <button className="r items-center hover:shadow-lg drum">4</button>
-              <button className="t drum">5</button>
-              <button className="y drum">6</button>
+              <button className="r items-center hover:shadow-lg drum mb-4">
+                <img src={hat} alt="Hat Drum" />
+              </button>
+              <button className="t drum mb-4">
+                <img src={bass} alt="Bass Drum" />
+              </button>
+              <button className="y drum mb-4">
+                <img src={snare} alt="Snare Drum" />
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* About Me Section */}
+      <div className="bg-bgColor h-screen overflow-y-auto">
+        <div className="container mx-auto px-4 h-full flex flex-col justify-center">
+          <h2 className="text-3xl text-center font-bold mb-8">About Me</h2>
+          <p className="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit felis vitae facilisis.</p>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-bgColor text-center py-8">
+        <div className="container mx-auto">
+          <div className="flex justify-center items-center space-x-6">
+            {/* Documentation Link */}
+            <a href="#" className="text-blue-500 hover:text-blue-700">
+              Documentation
+            </a>
+            {/* Social Links */}
+            <a href="#" className="text-blue-500 hover:text-blue-700">
+              <FaTwitter size={24} />
+            </a>
+            <a href="#" className="text-blue-500 hover:text-blue-700">
+              <FaLinkedin size={24} />
+            </a>
+            {/* GitHub Link */}
+            <a href="#" className="text-blue-500 hover:text-blue-700">
+              <FaGithub size={24} />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
