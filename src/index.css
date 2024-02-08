@@ -16,14 +16,116 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.drumalign {
+  text-align: center;
+  width: 80%;
+  transition: all 0.5s ease-in-out;
+  
+}
+/* @media (max-width: 800px) {
+  .drumalign {
+    transform: rotate(90deg);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  
+  .drum {
+    width: calc(33% - 20px);
+    margin: 5px;
+   
+     
+  }
+} */
+
+
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.q {
+
+}
+
+.w {
+
+}
+
+.e {
+
+}
+
+.r {
+
+}
+
+.t {
+
+}
+
+.y {
+
+}
+
+.l {
+
+}
+
+.set {
+  margin: 0% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+
+  font-size: 5rem;
+  
+  line-height: 2;
+  font-weight: 900;
+  
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  
+  margin: 30px;
+}
+
+
+
 @layer base {
   :root {
-    --color-bg: 218 224 230;
-    --color-bg2: 26 26 27;
-    --color-primary: 255 255 255;
-    --color-secondary: 255 255 255;
-    --color-ascent1: 241 106 31;
-    --color-ascent2: 8 0 37;
+    --color-bg: 236 236 236;
+    --color-bg2: 12 12 12;
+    --color-primary: 1 42 147;
+    --color-secondary: 254 98 166;
+    --color-ascent1: 247 43 2;
+    --color-ascent2: 247 43 2;
     --color-ascent3: 254 253 248;
     --color-ascent4: 94 130 143;
 
@@ -38,12 +140,12 @@ code {
   
   /* //15 23 42  21 30 49*/
   [data-theme="dark"] {
-     --color-bg: 0 0 0;
-     --color-bg2: 255 255 255;
-    --color-primary: 20 20 20;
-    --color-secondary: 26 26 27;
-    --color-ascent1: 241 106 32;
-    --color-ascent2: 164 161 162;
+     --color-bg: 26 26 26;
+     --color-bg2: 236 236 236;
+    --color-primary: 108 149 254;
+    --color-secondary: 157 1 69;
+    --color-ascent1: 253 48 8;
+    --color-ascent2: 247 43 2;
     --color-ascent3: 20 20 20;
     --color-ascent4: 94 130 143;
     --color-blue: 6 90 216;
