@@ -19,8 +19,11 @@ function App() {
   };
 
   return (
-    <div data-theme={theme} className='w-full min-h-screen overflow-hidden'>
+    <div data-theme={theme} className='w-full fonts min-h-screen overflow-hidden'>
+      <body><link rel="preconnect" href="https://fonts.googleapis.com"></link>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link> <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Playfair+Display&display=swap" rel="stylesheet"></link></body>
       <div className="bg-bg w-full h-screen justify-center items-center">
+      
         <TopBar />
 
         {/* Drum Section */}
@@ -63,28 +66,28 @@ function App() {
       {/* About Me Section */}
       <div className="bg-bgColor h-screen overflow-y-auto">
         <div className="container mx-auto px-4 h-full flex flex-col justify-center">
-          <h2 className="text-3xl text-center font-bold mb-8">About Me</h2>
+          <h2 className="text-3xl text-center font-bold mb-8">Get Started</h2>
           <p className="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit felis vitae facilisis.</p>
         </div>
       </div>
 
       {/* Footer */}
-      <footer className="bg-bgColor text-center py-8">
+      <footer className="bg-bg text-center py-8">
         <div className="container mx-auto">
           <div className="flex justify-center items-center space-x-6">
             {/* Documentation Link */}
-            <a href="#" className="text-blue-500 hover:text-blue-700">
+            <a href="#" className="text-bg2 hover:text-blue-700">
               Documentation
             </a>
             {/* Social Links */}
-            <a href="#" className="text-blue-500 hover:text-blue-700">
+            <a href="#" className="text-bg2 hover:text-blue-700">
               <FaTwitter size={24} />
             </a>
-            <a href="#" className="text-blue-500 hover:text-blue-700">
+            <a href="#" className="text-bg2 hover:text-blue-700">
               <FaLinkedin size={24} />
             </a>
             {/* GitHub Link */}
-            <a href="#" className="text-blue-500 hover:text-blue-700">
+            <a href="#" className="text-bg2 hover:text-blue-700">
               <FaGithub size={24} />
             </a>
           </div>

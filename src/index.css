@@ -9,8 +9,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
+.fonts{
+  font-family: 'Kanit', sans-serif;
 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -77,34 +81,42 @@ footer {
 /* Adjust as needed */
 }
 
+
 @layer base {
   :root {
-    --color-bg: 236 236 236;
-    --color-bg2: 12 12 12;
-    --color-primary: 1 42 147;
-    --color-secondary: 254 98 166;
-    --color-ascent1: 247 43 2;
-    --color-ascent2: 247 43 2;
-    --color-ascent3: 254 253 248;
-    --color-ascent4: 94 130 143;
-    --color-grey: 210 210 210;
-    --color-placehold: 150 150 150;
-    --color-bgBorder: 244 243 232;
+    --text: #072721;
+    --background: #f7fdfd;
+    --primary: #157969;
+    --secondary: #e573e7;
+    --accent: #c42158;
   }
-
-  /* Dark theme styles */
-  [data-theme="dark"] {
-     --color-bg: 26 26 26;
-     --color-bg2: 236 236 236;
-    --color-primary: 108 149 254;
-    --color-secondary: 157 1 69;
-    --color-ascent1: 253 48 8;
-    --color-ascent2: 247 43 2;
-    --color-ascent3: 20 20 20;
-    --color-ascent4: 94 130 143;
-    --color-blue: 6 90 216;
-    --color-grey: 48 48 48;
-    --color-white: 26 26 27;
-    --color-bgBorder: 48 48 48;
+  [data-theme="Purpledark"] {
+    --text: #d8f8f2;
+    --background: #020808;
+    --primary: #86ead9;
+    --secondary: #8a188c;
+    --accent: #de3b71;
   }
+  [data-theme="Purpledark"] {
+    --text: #d8f8f2;
+    --background: #020808;
+    --primary: #86ead9;
+    --secondary: #8a188c;
+    --accent: #de3b71;
+  }
+  [data-theme="Purpledark"] {
+    --text: #d8f8f2;
+    --background: #020808;
+    --primary: #86ead9;
+    --secondary: #8a188c;
+    --accent: #de3b71;
+  }
+  [data-theme="Purpledark"] {
+    --text: #d8f8f2;
+    --background: #020808;
+    --primary: #86ead9;
+    --secondary: #8a188c;
+    --accent: #de3b71;
+  }
+  
 }

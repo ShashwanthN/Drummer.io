@@ -2,20 +2,13 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     colors: {
-      bg: "rgb(var(--color-bg) / <alpha-value>)",
-      bg2: "rgb(var(--color-bg2) / <alpha-value>)",
-      primary: "rgb(var(--color-primary) / <alpha-value>)",
-      secondary: "rgb(var(--color-secondary) / <alpha-value>)",
-      grey: "rgb(var(--color-grey) / <alpha-value>)",
-      placehold: "rgb(var(--color-placehold) / <alpha-value>)",
+      'text': 'var(--text)',
+      'bg': 'var(--background)',
+      'primary': 'var(--primary)',
+      'secondary': 'var(--secondary)',
+      'ascent': 'var(--accent)',
      
      
-      ascent: {
-        1: "rgb(var(--color-ascent1) / <alpha-value>)",
-        2: "rgb(var(--color-ascent2) / <alpha-value>)",
-        3: "rgb(var(--color-ascent3) / <alpha-value>)",
-        4: "rgb(var(--color-ascent4) / <alpha-value>)",
-      },
 
     },
     screens: {
