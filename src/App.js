@@ -18,6 +18,10 @@ function App() {
     dispatch(SetTheme(themeValue));
   };
 
+function handleClick(){
+    alert("hello");
+  }
+document.querySelector("button").addEventListener("click", handleClick);
   return (
     <div data-theme={theme} className='w-full fonts min-h-screen overflow-hidden'>
       <body><link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -27,7 +31,7 @@ function App() {
         <TopBar />
 
         {/* Drum Section */}
-        <div className='home w-full bg-bgColor h-screen overflow-hidden'>
+        <div className='home w-full h-screen overflow-hidden'>
           <div className='w-full flex flex-row justify-center h-full'>
             {/* Left */}
             <div className="w-full h-full text-bg2 flex flex-col justify-center items-center lg:items-start lg:w-1/4">
@@ -64,7 +68,7 @@ function App() {
       </div>
 
       {/* About Me Section */}
-      <div className="bg-bgColor h-screen overflow-y-auto">
+      <div className="bg-text text-bg h-screen overflow-y-auto">
         <div className="container mx-auto px-4 h-full flex flex-col justify-center">
           <h2 className="text-3xl text-center font-bold mb-8">Get Started</h2>
           <p className="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit felis vitae facilisis.</p>
@@ -80,19 +84,22 @@ function App() {
               Documentation
             </a>
             {/* Social Links */}
-            <a href="#" className="text-bg2 hover:text-blue-700">
+            <a href="#" className="text-ascent hover:text-primary">
               <FaTwitter size={24} />
             </a>
-            <a href="#" className="text-bg2 hover:text-blue-700">
+            <a href="#" className="text-ascent hover:text-primary">
               <FaLinkedin size={24} />
             </a>
             {/* GitHub Link */}
-            <a href="#" className="text-bg2 hover:text-blue-700">
+            <a href="#" className="text-ascent hover:text-text">
               <FaGithub size={24} />
             </a>
+            
           </div>
+         
         </div>
       </footer>
+      
     </div>
   );
 }

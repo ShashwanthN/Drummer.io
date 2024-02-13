@@ -83,40 +83,49 @@ footer {
 
 
 @layer base {
-  :root {
+  /* :root {
     --text: #072721;
     --background: #f7fdfd;
     --primary: #157969;
     --secondary: #e573e7;
     --accent: #c42158;
   }
-  [data-theme="Purpledark"] {
+  [data-theme="dark"] {
     --text: #d8f8f2;
     --background: #020808;
     --primary: #86ead9;
     --secondary: #8a188c;
     --accent: #de3b71;
+  } */
+  :root {
+    --text: #02060d;
+    --background: #fbfcfe;
+    --primary: #2467db;
+    --secondary: #aa84eb;
+    --accent: #a553e4;
   }
-  [data-theme="Purpledark"] {
-    --text: #d8f8f2;
-    --background: #020808;
-    --primary: #86ead9;
-    --secondary: #8a188c;
-    --accent: #de3b71;
-  }
-  [data-theme="Purpledark"] {
-    --text: #d8f8f2;
-    --background: #020808;
-    --primary: #86ead9;
-    --secondary: #8a188c;
-    --accent: #de3b71;
-  }
-  [data-theme="Purpledark"] {
-    --text: #d8f8f2;
-    --background: #020808;
-    --primary: #86ead9;
-    --secondary: #8a188c;
-    --accent: #de3b71;
+  [data-theme="dark"] {
+    --text: #f2f6fd;
+    --background: #010204;
+    --primary: #2467db;
+    --secondary: #3a147b;
+    --accent: #6d1bac;
   }
   
+  /* :root {
+    --text: #010909;
+    --background: #edfdfc;
+    --primary: #2ce8de;
+    --secondary: #88c4f2;
+    --accent: #5a8ded;
+  }
+  [data-theme="dark"] {
+    --text: #f6fefc;
+    --background: #021211;
+    --primary: #17d3ca;
+    --secondary: #0d4977;
+    --accent: #1246a5;
+  } */
+  
+
 }
