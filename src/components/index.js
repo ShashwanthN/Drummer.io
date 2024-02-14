@@ -1,5 +1,5 @@
 
 import TopBar from "./TopBar";
-
-export {TopBar};
+import FallingLetter from "./fallingLetter";
+export {TopBar, FallingLetter};
 
