@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     // Add event listener for keydown event on the whole document
     document.addEventListener('keydown', handleKeyPress);
-    
+  
     // Clean up the event listener when the component unmounts
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
@@ -30,7 +30,10 @@ function App() {
     const themeValue = theme === 'light' ? 'dark' : 'light';
     dispatch(SetTheme(themeValue));
   };
-
+const animateClick = (trigger) =>{
+  var startAnimate = trigger;
+  startAnimate.classList.add("pressed");
+}
   const audioplay = (trigger) => {
     switch (trigger) {
       case "w":
@@ -70,11 +73,15 @@ function App() {
 
   const handleClick = (trigger) => {
     audioplay(trigger);
+    // Pass the button element to animateClick
+    animateClick(document.activeElement);
   };
-
+  
   const handleKeyPress = (event) => {
     const trigger = event.key.toLowerCase();
     audioplay(trigger);
+    // Pass the button element to animateClick
+    animateClick(document.activeElement);
   };
 
   return (
@@ -123,13 +130,12 @@ function App() {
       <footer className="bg-bg text-center py-8">
         <div className="container mx-auto">
           <div className="flex justify-center items-center space-x-6">
-            <a href="#" className="text-bg2 hover:text-blue-700">
+            {/* <a href="#" className="text-ascent hover:text-blue-700">
               Documentation
-            </a>
-            <a href="#" className="text-ascent hover:text-primary">
-              <FaTwitter size={24} />
-            </a>
-            <a href="#" className="text-ascent hover:text-primary">
+            </a> */}
+            
+            
+            <a href="www.linkedin.com/in/shashwanth-sivakumar-n" className="text-ascent hover:text-primary">
               <FaLinkedin size={24} />
             </a>
             <a href="#" className="text-ascent hover:text-text">
